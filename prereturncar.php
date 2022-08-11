@@ -90,7 +90,7 @@ if (mysqli_num_rows($result1) > 0) {
     ?>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="text-center">Return your cars here</h1>
+            <h2 class="text-center">Return your cars here</h2>
             <p class="text-center"> Hope you enjoyed our service </p>
         </div>
     </div>
