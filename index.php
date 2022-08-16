@@ -129,7 +129,6 @@ $conn = Connect();
         }
         ?>
     </section>
-
 </div>
 
 <div class="bgimg-2">
@@ -148,7 +147,6 @@ $conn = Connect();
             <div class="col-sm-6">
                 <h5>© <?php echo date("Y"); ?> Car Rentals</h5>
             </div>
-
         </div>
     </div>
 </footer>
@@ -161,5 +159,4 @@ $conn = Connect();
 <!-- Custom Theme JavaScript -->
 <script src="assets/js/theme.js"></script>
 </body>
-
 </html>
