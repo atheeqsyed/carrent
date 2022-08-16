@@ -137,6 +137,7 @@ if(!isset($_SESSION['login_customer'])){
                         $non_ac_price = $row1["non_ac_price"];
                         $ac_price_per_day = $row1["ac_price_per_day"];
                         $non_ac_price_per_day = $row1["non_ac_price_per_day"];
+                        $car_avl = $row1["car_availability"];
                     }
                 }
 
@@ -144,6 +145,8 @@ if(!isset($_SESSION['login_customer'])){
 
                 <!-- <div class="form-group"> -->
                 <h5> Selected Car:&nbsp;  <b><?php echo($car_name);?></b></h5>
+                <h5> Car Availablity :&nbsp; <b><?php echo($car_avl);?></b></h5>
+                <h5> Admin Name :&nbsp;  <b><?php echo $_GET['admin'];?></b></h5>
                 <!-- </div> -->
 
                 <!-- <div class="form-group"> -->
@@ -152,7 +155,7 @@ if(!isset($_SESSION['login_customer'])){
                 <!-- <div class="form-group"> -->
                 <?php $today = date("Y-m-d") ?>
                 <label><h5>Start Date:</h5></label>
-                <input type="date" name="rent_start_date" min="<?php echo($today);?>" required="">
+                <input type="date" name="rent_start_date" min="<?php echo(date('Y-m-d', strtotime($today. ' + 3 days')));?>" required="">
                 &nbsp;
                 <label><h5>End Date:</h5></label>
                 <input type="date" name="rent_end_date" min="<?php echo($today);?>" required="">
@@ -242,7 +245,6 @@ if(!isset($_SESSION['login_customer'])){
 
                         <input type="submit"name="submit" value="Rent Now" class="btn btn-warning pull-right">
             </form>
-
         </div>
         <div class="col-md-12" style="float: none; margin: 0 auto; text-align: center;">
             <h6><strong>Note:</strong> You will be charged with extra <span class="text-danger">Rs. 500</span> for each day after the due date ends.</h6>

@@ -128,8 +128,8 @@ if(isset($_SESSION['login_customer'])){
                         </div>
 
                     </div>
-                  <!--  <label style="margin-left: 5px;">or</label> <br>-->
-                   <!-- <label style="margin-left: 5px;"><a href="customersignup.php">Create a new account.</a></label>-->
+                    <label style="margin-left: 5px;">or</label> <br>
+                    <label style="margin-left: 5px;"><a href="customersignup.php">Create a new account.</a></label>
                 </form>
             </div>
         </div>

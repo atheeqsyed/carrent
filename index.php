@@ -81,6 +81,8 @@ $conn = Connect();
     <!-- /.container -->
 </nav>
 
+
+
 <div class="bgimg-1">
     <header class="intro">
         <div class="intro-body">
@@ -100,6 +102,10 @@ $conn = Connect();
         </div>
     </header>
 </div>
+
+<?php
+if (isset($_SESSION['login_customer'])) {?>
+
 <div id="sec2" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
     <h3 style="text-align:center;">Available Cars</h3>
     <br>
@@ -113,12 +119,14 @@ $conn = Connect();
                 $car_id = $row1["car_id"];
                 $car_name = $row1["car_name"];
                 $car_img = $row1["car_img"];
+                $car_price = $row1["ac_price"];
 
                 ?>
-                <a href="booking.php?id=<?php echo($car_id) ?>">
+                <a href="booking.php?id=<?php echo($car_id)?>&admin=atheeq">
                     <div class="sub-menu">
                         <img class="card-img-top" src="<?php echo $car_img; ?>" alt="Card image cap">
                         <h5><b> <?php echo $car_name; ?> </b></h5>
+                        <h5><b> <?php echo $car_price ; ?>  </b></h5>
                     </div>
                 </a>
             <?php }}
@@ -129,7 +137,9 @@ $conn = Connect();
         }
         ?>
     </section>
+
 </div>
+<?php } ?>
 
 <div class="bgimg-2">
     <div class="caption">
@@ -147,6 +157,7 @@ $conn = Connect();
             <div class="col-sm-6">
                 <h5>© <?php echo date("Y"); ?> Car Rentals</h5>
             </div>
+
         </div>
     </div>
 </footer>
@@ -159,4 +170,5 @@ $conn = Connect();
 <!-- Custom Theme JavaScript -->
 <script src="assets/js/theme.js"></script>
 </body>
+
 </html>

@@ -108,8 +108,10 @@ $customer_email = $conn->real_escape_string($_POST['customer_email']);
 $customer_phone = $conn->real_escape_string($_POST['customer_phone']);
 $customer_address = $conn->real_escape_string($_POST['customer_address']);
 $customer_password = $conn->real_escape_string($_POST['customer_password']);
+$customer_terms = $conn->real_escape_string($_POST['customer_terms']);
 
-$query = "INSERT into customers(customer_name,customer_username,customer_email,customer_phone,customer_address,customer_password) VALUES('" . $customer_name . "','" . $customer_username . "','" . $customer_email . "','" . $customer_phone . "','" . $customer_address ."','" . $customer_password ."')";
+  //  $query = "INSERT into customers(customer_name,customer_username,customer_email,customer_phone,customer_address,customer_password) VALUES('" . $customer_name . "','" . $customer_username . "','" . $customer_email . "','" . $customer_phone . "','" . $customer_address ."','" . $customer_password ."')";
+$query = "INSERT into customers(customer_name,customer_username,customer_email,customer_phone,customer_address,customer_password,terms) VALUES('$customer_name' , '$customer_username' , '$customer_email', '$customer_phone', '$customer_address','$customer_password', '$customer_terms')";
 $success = $conn->query($query);
 
 if (!$success){
