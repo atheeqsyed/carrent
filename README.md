@@ -1,2 +1,2 @@
-# carrent
+# carrent app
 Car rental application
