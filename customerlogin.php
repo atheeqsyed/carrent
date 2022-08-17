@@ -1,5 +1,6 @@
 <?php
 include('login_customer.php'); // Includes Login Script
+require 'navbar.php';
 
 if(isset($_SESSION['login_customer'])){
     header("location: index.php"); //Redirecting
@@ -22,61 +23,6 @@ if(isset($_SESSION['login_customer'])){
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 <body background="assets/img/blank.png">
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="index.php">
-                Car Rentals </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-
-        <?php
-
-        if (isset($_SESSION['login_customer'])){
-            ?>
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">Home</a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_customer']; ?></a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-                    </li>
-                </ul>
-            </div>
-
-            <?php
-        }
-        else {
-            ?>
-
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.php">Home</a>
-                    </li>
-                    <li>
-                        <a href="customerlogin.php">Customer</a>
-                    </li>
-
-                </ul>
-            </div>
-        <?php   }
-        ?>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
 
 <div class="container">
     <div class="jumbotron">

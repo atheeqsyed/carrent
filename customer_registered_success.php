@@ -1,5 +1,5 @@
 <html>
-
+<?php require 'navbar.php'; ?>
 <head>
     <title> customer Signup | Athiba Car Rentals </title>
 </head>
@@ -36,8 +36,6 @@
     }
 </script>
 
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
