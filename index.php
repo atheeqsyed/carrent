@@ -25,6 +25,8 @@ $conn = Connect();
 
 
 
+
+
 <div class="bgimg-1">
     <header class="intro">
         <div class="intro-body">
@@ -45,6 +47,36 @@ $conn = Connect();
         </div>
     </header>
 </div>
+<<<<<<< HEAD
+
+<?php
+if (isset($_SESSION['login_customer'])) {?>
+
+<div id="sec2" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">Available Cars</h3>
+    <br>
+    <section class="menu-content">
+        <?php
+        $sql1 = "SELECT * FROM cars";
+        $result1 = mysqli_query($conn,$sql1);
+        $carlist = mysqli_num_rows($result1);
+
+        if (mysqli_num_rows($carlist) > 0) {
+            for($i = 0; $i < mysqli_num_rows($carlist); $i++) {
+                $row = mysqli_fetch_array($carlist);
+                ?>
+                <a href="booking.php?id=<?php echo $row['$car_id']?>&admin=atheeq">
+                    <div class="sub-menu">
+                        <img class="card-img-top" src="<?php echo $row['$car_img']; ?>" alt="Card image cap">
+                        <h5><b> <?php echo $row['$car_name']; ?> </b></h5>
+                        <h5><b> <?php echo $row['$car_price'] ; ?>  </b></h5>
+                    </div>
+                </a>
+            <?php }}
+        else {
+            ?>
+            <h1> No cars available :( </h1>
+=======
 
 <?php
 if (isset($_SESSION['login_customer'])) { ?>
@@ -53,6 +85,7 @@ if (isset($_SESSION['login_customer'])) { ?>
         <h3 style="text-align:center;">Available Cars</h3>
         <br>
         <section class="menu-content">
+>>>>>>> origin/main
             <?php
             $query = "SELECT * FROM cars";
             $result = mysqli_query($conn, $query);
@@ -79,7 +112,11 @@ if (isset($_SESSION['login_customer'])) { ?>
             ?>
         </section>
 
+<<<<<<< HEAD
+</div>
+=======
     </div>
+>>>>>>> origin/main
 <?php } ?>
 
 <div class="bgimg-2">

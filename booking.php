@@ -51,16 +51,29 @@ if (!isset($_SESSION['login_customer'])) {
                 ?>
                 <h5> Selected Car:&nbsp; <b><?php echo($car_name); ?></b></h5>
 
+<<<<<<< HEAD
+                <!-- <div class="form-group"> -->
+                <h5> Selected Car:&nbsp;  <b><?php echo($car_name);?></b></h5>
+                <h5> Car Availablity :&nbsp; <b><?php echo($car_avl);?></b></h5>
+                <h5> Admin Name :&nbsp;  <b><?php echo $_GET['admin'];?></b></h5>
+                <!-- </div> -->
+=======
                 <h5> Car Availablity :&nbsp; <b><?php echo($car_avl); ?></b></h5>
 
                 <h5> Admin Name :&nbsp; <b><?php echo $_GET['admin']; ?></b></h5>
 
                 <h5> Number Plate:&nbsp;<b> <?php echo($car_nameplate); ?></b></h5>
+>>>>>>> origin/main
 
                 <?php $today = date("Y-m-d") ?>
                 <label><h5>Start Date:</h5></label>
+<<<<<<< HEAD
+                <input type="date" name="rent_start_date" min="<?php echo(date('Y-m-d', strtotime($today. ' + 3 days')));?>" required="">
+                &nbsp;
+=======
                 <input type="date" name="rent_start_date"
                        min="<?php echo(date('Y-m-d', strtotime($today . ' + 3 days'))); ?>" required="">&nbsp;
+>>>>>>> origin/main
                 <label><h5>End Date:</h5></label>
                 <input type="date" name="rent_end_date" min="<?php echo($today); ?>" required="">
 
