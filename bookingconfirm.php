@@ -186,5 +186,4 @@ if (!$result1 | !$result2 | !$result3) {
             </div>
         </div>
     </footer>
-
 </html>
