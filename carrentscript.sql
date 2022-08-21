@@ -1,3 +1,6 @@
+CREATE DATABASE CARRENTAL;
+GO
+
 create table if not exists cars
 (
     car_id               int auto_increment
