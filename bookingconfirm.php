@@ -109,9 +109,7 @@ if (!$result1 | !$result2 | !$result3) {
 
 <h2 class="text-center"> Thank you for using Car Rental System! We wish you have a safe ride. </h2>
 
-
 <h3 class="text-center"><strong>Your Order Number:</strong> <span style="color: blue;"><?php echo "$id"; ?></span></h3>
-
 
 <div class="container">
     <h5 class="text-center">Please read the following information about your order.</h5>
@@ -176,6 +174,7 @@ if (!$result1 | !$result2 | !$result3) {
         <br><br>
     </div>
     <?php } ?>
+    // footer
     <footer class="site-footer">
         <div class="container">
             <hr>
