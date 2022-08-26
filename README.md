@@ -1,2 +1,3 @@
-<p allign='center'> PHP PROJECT </p>
-<strong> Car rental application</strong>
+
+<p align="center">PHP PROJECT</a></p>
+<h1 align="center"> Car rental application  </p>
