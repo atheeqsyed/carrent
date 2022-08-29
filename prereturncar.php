@@ -18,10 +18,8 @@ $conn = Connect();
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/clientpage.css" />
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-
 <?php $login_customer = $_SESSION['login_customer'];
-
+    //Sql query
 $sql1 = "SELECT c.car_name, rc.rent_start_date, rc.rent_end_date, rc.fare, rc.charge_type, rc.id FROM rentedcars rc, cars c
     WHERE rc.customer_username='$login_customer' AND c.car_id=rc.car_id AND rc.return_status='NR'";
 $result1 = $conn->query($sql1);
@@ -59,8 +57,6 @@ if (mysqli_num_rows($result1) > 0) {
                         } else {
                             echo ($row["fare"] . "/km");
                         }
-
-
                         ?></td>
                     <td><a href="returncar.php?id=<?php echo $row["id"];?>"> Return </a></td>
                 </tr>
