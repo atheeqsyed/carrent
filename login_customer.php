@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
         require 'connection.php';
         $conn = Connect();
 
-// SQL query to fetch information of registerd users and finds user match.
+// SQL query to fetch info of registerd users and finds user match.
         $query = "SELECT customer_username, customer_password FROM customers WHERE customer_username=? AND customer_password=? LIMIT 1";
 
 // To protect MySQL injection for Security purpose
