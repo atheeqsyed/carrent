@@ -22,11 +22,6 @@ $conn = Connect();
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-
-
-
-
 <div class="bgimg-1">
     <header class="intro">
         <div class="intro-body">
@@ -47,7 +42,7 @@ $conn = Connect();
         </div>
     </header>
 </div>
-<<<<<<< HEAD
+<<<<<<<<<<<< HEAD
 
 <?php
 if (isset($_SESSION['login_customer'])) {?>
