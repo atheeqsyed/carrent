@@ -115,5 +115,4 @@ create index customer_username
 
 create index driver_id
     on rentedcars (driver_id);
-
-
+    //Test
