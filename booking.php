@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-require 'navbar.php'; // reference
+require 'navbar.php'; // refer
 include('session_customer.php');
 if (!isset($_SESSION['login_customer'])) {
     session_destroy();
