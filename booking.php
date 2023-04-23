@@ -51,7 +51,7 @@ if (!isset($_SESSION['login_customer'])) {
                 ?>
                 <h5> Selected Car:&nbsp; <b><?php echo($car_name); ?></b></h5>
 
-<<<<<<< HEAD
+<<<<<<<< HEAD
                 <!-- <div class="form-group"> -->
                 <h5> Selected Car:&nbsp;  <b><?php echo($car_name);?></b></h5>
                 <h5> Car Availablity :&nbsp; <b><?php echo($car_avl);?></b></h5>
