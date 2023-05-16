@@ -11,6 +11,7 @@ if(isset($_SESSION['login_customer'])){
 <html>
 
 <head>
+    <!--Login Page -->
     <title> Customer Login | Car Rental </title>
 </head>
 <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
