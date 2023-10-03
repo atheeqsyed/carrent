@@ -1,2 +1,2 @@
-<p align="center">PHP_PROJECT</a></p>
+<p align="center">PHP PROJECT</a></p>
 <h1 align="center"> Car Rent Application</p>
